@@ -11,6 +11,6 @@ umask 022
 if test -n "$HOMEBREW_FORCE_VENDOR_RUBY" || \
    ! command -v ruby >/dev/null || \
    (command -v ruby >/dev/null && ruby -e 'exit RUBY_VERSION.split(".").first(2).join(".").to_f < 2.3'); then
-    eval "`curl -fsSL https://raw.githubusercontent.com/Linuxbrew/install/master/install-ruby`"
+    eval "`curl -fsSL https://raw.githubusercontent.com/underscorebrody/install/locked-good/install-ruby`"
 fi
-exec ruby -e "`curl -fsSL https://raw.githubusercontent.com/Linuxbrew/install/master/install`" "$@"
+exec ruby -e "`curl -fsSL https://raw.githubusercontent.com/underscorebrody/install/locked-good/install`" "$@"
